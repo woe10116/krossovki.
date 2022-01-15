@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<meta charset = "UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Krossovki</title>
+<link rel="stylesheet" href="main1.css">
+
+<script src="jquery-3.6.0.min.js"></script>
+<script type ="text/javascript" src="corsina1.js"></script>
+
+
+
+</head>
+<body>
+	<header>
+		<div id="logo" onclick="slowScroll('#top')">
+
+			<span>Krossovki</span>
+		</div>
+		<ul class="menu-main" align=center>
+		<div id="about">
+			<a href = "index.html" title="Главная" onclick="slowScroll('#main')"> Главная</a>
+			<big><a href="corsina.html"  onclick="slowScroll('#main')" title="корзина">Корзина</a></big>
+		</div>
+		</ul>
+		
+
+	</header>
+	
+	<div id="top">
+		<h1>Krossovki</h1>
+		<h3>Магазин брендовой обуви</h3>
+	</div>
+	<div id="main">
+		<div class="intro">
+			<h2>Мы обязательно поможем вам с выбором</h2>
+			<span>Любые кроссовки  на ваш вкус, большой ассмортимент товаров</span>
+		</div>
+		<div class="text">
+
+			<span>Кроссовки – это наша специализация, то, что мы любим и с удовольствием носим сами, но образ модника был бы не полным без других хайповых вещей. Поэтому в нашем магазине также представлена одежда и обувь в уличном стиле. Кроме того, на наших страницах ты найдешь всевозможные аксессуары.</span>
+		</div>
+	</div>
+	<a id=“anchor”></a>
+	
+	
+<input type="text" id="text-to-find" placeholder="Введите название товара"> <input type="button"  value = "Найти" onclick="searchTextOnPage('text-to-find'); return false;"/>
+
+
+
+
+	<div class ='overwiew0'>
+
+	<div id="overwiew">
+		<h2> Лучшие бренды кроссовок</h2>
+		<h4>С нами все проще</h4>
+		
+		<div class="img" id='0'>
+			 <span>Adidas</span>
+			<img  width=350 height=200 src="img/adidasmain.jpg" alt="" id = 'image'>
+      <div>
+        
+            <button id="prev" onclick="changeImg(this.id);">Пред</button>
+            <button id="next" onclick="changeImg(this.id);">След</button>
+          </div>
+
+   
+			
+			<input type = "button"  onclick="buy(price = 5999, text = 'Adidas', id='Adidas' )" value="Товар кончился" >
+	</div>
+
+	<div class="img" id ='1'>
+		<span>Nike</span>
+			<img  width=350 height=200  src="img/nikemain.jpg" alt="">
+	
+
+<SELECT name="SelectMyLove" id="SelectMyLove" onchange="GetData()">
+
+<OPTION SELECTED VALUE="0">Выберите размер</OPTION>
+<OPTION  VALUE="100">39-ого размер </OPTION>
+<OPTION VALUE="110 ">40-ого размер</OPTION>
+<OPTION VALUE="120 ">41-ого размер</OPTION>
+<OPTION VALUE="130 ">42-ого размер</OPTION>
+<OPTION VALUE="140 ">43-ого размер</OPTION>
+<OPTION VALUE="200 ">44-ого размер</OPTION>
+</SELECT>
+
+			
+
+			<input type = "button"  onclick="buy(price = 6989, text = 'Nike', id='SelectMyLove', img='img/nikemain.jpg')" value="Nikе - 6989" >
+	</div>
+	<div class="img" id='2'>
+		<span>NewBalance</span>
+			<img width=350 height=200  src="https://gentlemanmoderne.com/wp-content/uploads/2018/02/New-Balance-Histoire-US.jpg" alt="">
+			<SELECT name="SelectMyLove" id="SelectMyLove1" onchange="GetData()">
+
+<OPTION SELECTED VALUE="0">Выберите размер</OPTION>
+<OPTION  VALUE="100">39-ого размер </OPTION>
+<OPTION VALUE="110 ">40-ого размер</OPTION>
+<OPTION VALUE="120 ">41-ого размер</OPTION>
+<OPTION VALUE="130 ">42-ого размер</OPTION>
+<OPTION VALUE="140 ">43-ого размер</OPTION>
+<OPTION VALUE="200 ">44-ого размер</OPTION>
+</SELECT>
+
+
+			<input type = "button"  onclick="buy(price = 7599, text = 'NewBalance', id = 'SelectMyLove1', img='https://gentlemanmoderne.com/wp-content/uploads/2018/02/New-Balance-Histoire-US.jpg')" value="NewBаlance - 7599" >
+	</div>
+		<div class="img" id='3'>
+			<span>Puma</span>
+			<img width=350 height=200 src="https://cdn.shopify.com/s/files/1/0094/2252/files/DSC_3170.jpg?57064" alt="">
+			<SELECT name="SelectMyLove" id="SelectMyLove2" onchange="GetData()">
+
+<OPTION SELECTED VALUE="0">Выберите размер</OPTION>
+<OPTION  VALUE="100">39-ого размер </OPTION>
+<OPTION VALUE="110 ">40-ого размер</OPTION>
+<OPTION VALUE="120 ">41-ого размер</OPTION>
+<OPTION VALUE="130 ">42-ого размер</OPTION>
+<OPTION VALUE="140 ">43-ого размер</OPTION>
+<OPTION VALUE="200 ">44-ого размер</OPTION>
+</SELECT>
+			<input type = "button"  onclick="buy(price = 4999, text = 'Puma', id='SelectMyLove2', img = 'https://cdn.shopify.com/s/files/1/0094/2252/files/DSC_3170.jpg?57064')" value="Pumа - 4999" >
+	</div>
+</div>
+
+<a id=“anchor2”></a>
+<div id="overwiew1">
+		<h2> Лучшие бренды ботинок</h2>
+		<h4>С нами все проще</h4>
+		
+		<div class="img" id='4'>
+			<span>Baldinini</span>
+			<img width=350 height=200 src="http://poshivobuvi.moscow/gallery-image/additional_product_image/60/5c1b3f9b23048.jpg" alt="">
+      <SELECT name="SelectMyLove" id="SelectMyLove3" onchange="GetData()">
+
+<OPTION SELECTED VALUE="0">Выберите размер</OPTION>
+<OPTION  VALUE="100">39-ого размер </OPTION>
+<OPTION VALUE="110 ">40-ого размер</OPTION>
+<OPTION VALUE="120 ">41-ого размер</OPTION>
+<OPTION VALUE="130 ">42-ого размер</OPTION>
+<OPTION VALUE="140 ">43-ого размер</OPTION>
+<OPTION VALUE="200 ">44-ого размер</OPTION>
+</SELECT>
+			<input type = "button"  onclick="buy(price = 25999, text = 'Baldinini', id = 'SelectMyLove3', img  = 'http://poshivobuvi.moscow/gallery-image/additional_product_image/60/5c1b3f9b23048.jpg')" value="Bаldinini - 25999" >
+	</div>
+	<div class="img" id='5'>
+		<span>Timberland</span>
+
+			<img width=350 height=200  src="https://i.kym-cdn.com/entries/icons/facebook/000/021/329/timb.jpg" alt="">
+       <SELECT name="SelectMyLove" id="SelectMyLove4" onchange="GetData()">
+
+<OPTION SELECTED VALUE="0">Выберите размер</OPTION>
+<OPTION  VALUE="100">39-ого размер </OPTION>
+<OPTION VALUE="110 ">40-ого размер</OPTION>
+<OPTION VALUE="120 ">41-ого размер</OPTION>
+<OPTION VALUE="130 ">42-ого размер</OPTION>
+<OPTION VALUE="140 ">43-ого размер</OPTION>
+<OPTION VALUE="200 ">44-ого размер</OPTION>
+</SELECT>
+			<input type = "button"  onclick="buy(price = 10500, text = 'TimberLand', id = 'SelectMyLove4', img = 'https://i.kym-cdn.com/entries/icons/facebook/000/021/329/timb.jpg' )" value="TimberLand - 10500" >
+	</div>
+	<div class="img" id='6'>
+		<span>Hugo Boss</span>
+			<img width=350 height=200  src="https://i.pinimg.com/originals/24/0d/20/240d20f61981eb1646d7f798d8e44b2c.jpg" alt="">
+      <SELECT name="SelectMyLove" id="SelectMyLove5" onchange="GetData()">
+
+<OPTION SELECTED VALUE="0">Выберите размер</OPTION>
+<OPTION  VALUE="100">39-ого размер </OPTION>
+<OPTION VALUE="110 ">40-ого размер</OPTION>
+<OPTION VALUE="120 ">41-ого размер</OPTION>
+<OPTION VALUE="130 ">42-ого размер</OPTION>
+<OPTION VALUE="140 ">43-ого размер</OPTION>
+<OPTION VALUE="200 ">44-ого размер</OPTION>
+</SELECT>
+			<input type = "button"  onclick="buy(price = 30000, text = 'Hugo Boss', id = 'SelectMyLove5', img = 'https://i.pinimg.com/originals/24/0d/20/240d20f61981eb1646d7f798d8e44b2c.jpg')" value="Hugo Bоss - 30000" >
+	</div>
+		<div class="img" id='7'>
+			<span>Lacoste</span>
+			<img width=350 height=200 src="https://images.ru.prom.st/699345767_w640_h640_muzhskie-tufli-lacoste.jpg" alt="">
+           <SELECT name="SelectMyLove" id="SelectMyLove6" onchange="GetData()">
+
+<OPTION SELECTED VALUE="0">Выберите размер</OPTION>
+<OPTION  VALUE="100">39-ого размер </OPTION>
+<OPTION VALUE="110 ">40-ого размер</OPTION>
+<OPTION VALUE="120 ">41-ого размер</OPTION>
+<OPTION VALUE="130 ">42-ого размер</OPTION>
+<OPTION VALUE="140 ">43-ого размер</OPTION>
+<OPTION VALUE="200 ">44-ого размер</OPTION>
+</SELECT>
+			<input type = "button"  onclick="buy(price = 15999, text = 'Lacoste', id = 'SelectMyLove6', img = 'https://images.ru.prom.st/699345767_w640_h640_muzhskie-tufli-lacoste.jpg')" value="Lаcoste - 15999" >
+		
+
+	</div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+<div id ='faq'>
+<div>
+<span class='title'>Оплата</span><br>
+<span class='heading'>Как будет происходить оплата?</span>
+<p>При оплате заказа онлайн на сайте необходимо предъявить при получении документ, удостоверяющий личность. При оплате заказов на сайте и в приложении комиссия не взимается.</p>
+<span class='heading'>Рассрочка и кэшбэк</span>
+<p>Ты можешь воспользоваться рассрочкой, оплатив заказ на сайте adidas.ru и в магазинах Москвы из списка картой следующих банков:
+Хоум Кредит Банк карта «Свобода».
+Подробнее о правилах, условиях и порядке проведения рассрочки можно уточнить, обратившись в один из банков-партнеров.
+Кэшбэк
+Наш интернет-магазин сотрудничает с кэшбэк сервисом Letyshops.
+Бонус зачисляется в течение 70 дней с конца месяца, в котором произведена покупка.</p>
+</div>
+<div>
+<span class='title'>Товар</span><br>
+<span class='heading'>Как вернуть товар?</span>
+<p>Возврат заказов из интернет-магазина с доставкой на дом или в постамат/ПВЗ
+Ты можешь вернуть товар несколькими способами:
+В розничный магазин (бесплатный и самый быстрый способ);
+На центральный склад.</p>
+<span class='heading'>Как ухаживать за обувью?</span>
+<p> Правильный и регулярный уход позволит товарам служить многие сезоны. Как и любые вещи, одежда и обувь adidas сохраняются и выполняют функции лучше, если о них заботятся.</p>
+
+    
+</div>
+<div>
+<span class='title'>Доставка</span><br>
+<span class='heading'>Сколько стоит доставка?</span>
+<p>Мы доставим любой заказ на сумму от 5000 руб. бесплатно (стоимость нанесения персонализации не учитывается). 
+Стоимость доставки при заказе на меньшую сумму для каждого города указана здесь.
+
+Обрати внимание, что курьерская доставка оплачивается независимо от того, был ли заказ выкуплен полностью, частично или совершен отказ от покупки. Каждый новый заказ оплачивается отдельно, в том числе при единовременной доставке.</p>
+<span class='heading'>Как быстро доставят заказ?</span>
+<p>Финальные сроки доставки будут доступны в корзине при оформлении
+	
+
+	

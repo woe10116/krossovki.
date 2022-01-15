@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<meta charset = "UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Krossovki</title>
+<link rel="stylesheet" href="main1.css">
+<script src="jquery-3.6.0.min.js"></script>
+<script  src="corsina1.js"></script>
+
+</head>
+<body>
+	<header>
+		<div id="logo" onclick="slowScroll('#top')">
+
+			<span>Krossovki</span>
+		</div>
+		<ul class="menu-main" align=center>
+		<div id="about">
+			<a href="index.html" title="Главная" onclick="slowScroll('#main')"> Главная</a>
+			<big><a href="corsina.html"  onclick="slowScroll('#main')" title="Ответы на вопросы">Корзина</a></big>
+		</div>
+		</ul>
+		
+
+	</header>
+	<div id="top">
+		<h1>Krossovki</h1>
+		<h3>Магазин брендовых кроссовок</h3>
+	</div>
+	<div id="contacts">
+	<center><h5>Сделать заказ</h5></center>
+	<form id="form_input">
+		<label for="name">Ваше имя<span>*</span></label><br>
+		<input type="text" placeholder="Введите имя" name="name" id="name"><br>
+		<label for="email">Ваша Почта<span>*</span></label><br>
+		<input type="email" placeholder="Введите почту" name="email" id="email"><br>
+		<label for="message"> Ваша обувь
+			<span>*</span></label><br>
+	<!-- 	<textarea placeholder="Понравившеяся обувь" name="message" id="message"></textarea><br> -->
+	<div class = 'message'></div>
+
+	<!-- 	<div> <input type='button' onclick = "save(message.value,'message')" value = "Скачать чек"></div> -->
+		
+		<div class=''>
+		
+
+			<input type='button' onclick="clening_sessions()" value="CLEAR">
+		</div>
+		<div id="mess_send" class="btn">Отправить</div>
+		
+	</form>
+	
+
+
+
+
+
+</div>
+
+
+
+
+
+</div>
